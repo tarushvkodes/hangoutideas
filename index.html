@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brambleton Hangout Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Brambleton</div>
+            <ul class="nav-links">
+                <li><a href="#wifi-spots">WiFi Spots</a></li>
+                <li><a href="#outdoors">Outdoors</a></li>
+                <li><a href="#food">Food & Drink</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search hangout spots...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Hangout Spot in Brambleton</h1>
+            <p>Discover local favorites with WiFi, amazing views, and more</p>
+            <button class="primary-btn">Explore Now</button>
+        </div>
+    </section>
+
+    <section class="category-selector">
+        <div class="category active" data-filter="all">All</div>
+        <div class="category" data-filter="wifi">WiFi Spots</div>
+        <div class="category" data-filter="outdoor">Outdoor</div>
+        <div class="category" data-filter="food">Food & Drink</div>
+        <div class="category" data-filter="study">Study Spots</div>
+    </section>
+
+    <section id="wifi-spots" class="spots-section">
+        <h2>WiFi Spots</h2>
+        <div class="spots-grid">
+            <div class="spot-card" data-categories="wifi study">
+                <div class="spot-img" style="background-image: url('https://source.unsplash.com/random/300x200/?library')"></div>
+                <h3>Brambleton Library</h3>
+                <p>Modern library with free WiFi, study rooms, and quiet spaces.</p>
+                <div class="spot-details">
+                    <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                    <span><i class="fas fa-clock"></i> 10AM-8PM</span>
+                </div>
+            </div>
+            <div class="spot-card" data-categories="wifi food">
+                <div class="spot-img" style="background-image: url('https://source.unsplash.com/random/300x200/?cafe')"></div>
+                <h3>Blend Coffee Bar</h3>
+                <p>Cozy café with strong WiFi and plenty of seating for work or hanging out.</p>
+                <div class="spot-details">
+                    <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                    <span><i class="fas fa-clock"></i> 6AM-8PM</span>
+                </div>
+            </div>
+            <div class="spot-card" data-categories="wifi food">
+                <div class="spot-img" style="background-image: url('https://source.unsplash.com/random/300x200/?starbucks')"></div>
+                <h3>Starbucks - Brambleton Town Center</h3>
+                <p>Reliable workspace with power outlets and WiFi.</p>
+                <div class="spot-details">
+                    <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                    <span><i class="fas fa-clock"></i> 5:30AM-9PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="outdoors" class="spots-section">
+        <h2>Outdoor Spaces</h2>
+        <div class="spots-grid">
+            <div class="spot-card" data-categories="outdoor">
+                <div class="spot-img" style="background-image: url('https://source.unsplash.com/random/300x200/?park')"></div>
+                <h3>Brambleton Town Center Park</h3>
+                <p>Central park with seating areas, green spaces and seasonal events.</p>
+                <div class="spot-details">
+                    <span><i class="fas fa-tree"></i> Outdoor Space</span>
+                    <span><i class="fas fa-clock"></i> 24/7</span>
+                </div>
+            </div>
+            <div class="spot-card" data-categories="outdoor">
+                <div class="spot-img" style="background-image: url('https://source.unsplash.com/random/300x200/?trail')"></div>
+                <h3>Beaverdam Reservoir</h3>
+                <p>Beautiful walking trails and water views perfect for hanging out.</p>
+                <div class="spot-details">
+                    <span><i class="fas fa-hiking"></i> Trails</span>
+                    <span><i class="fas fa-clock"></i> Dawn to Dusk</span>
+                </div>
+            </div>
+            <div class="spot-card" data-categories="outdoor wifi">
+                <div class="spot-img" style="background-image: url('https://source.unsplash.com/random/300x200/?plaza')"></div>
+                <h3>Legacy Park</h3>
+                <p>Outdoor plaza with some public WiFi access and seating.</p>
+                <div class="spot-details">
+                    <span><i class="fas fa-wifi"></i> Limited WiFi</span>
+                    <span><i class="fas fa-clock"></i> 24/7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="food" class="spots-section">
+        <h2>Food & Drink</h2>
+        <div class="spots-grid">
+            <div class="spot-card" data-categories="food wifi">
+                <div class="spot-img" style="background-image: url('https://source.unsplash.com/random/300x200/?pizzeria')"></div>
+                <h3>Blue Ridge Grill</h3>
+                <p>Casual restaurant with WiFi and comfortable booths.</p>
+                <div class="spot-details">
+                    <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                    <span><i class="fas fa-clock"></i> 11AM-10PM</span>
+                </div>
+            </div>
+            <div class="spot-card" data-categories="food">
+                <div class="spot-img" style="background-image: url('https://source.unsplash.com/random/300x200/?icecream')"></div>
+                <h3>Scoop's Ice Cream</h3>
+                <p>Ice cream shop with outdoor seating area, perfect for a treat.</p>
+                <div class="spot-details">
+                    <span><i class="fas fa-ice-cream"></i> Desserts</span>
+                    <span><i class="fas fa-clock"></i> 12PM-9PM</span>
+                </div>
+            </div>
+            <div class="spot-card" data-categories="food wifi">
+                <div class="spot-img" style="background-image: url('https://source.unsplash.com/random/300x200/?bakery')"></div>
+                <h3>Ahso Restaurant</h3>
+                <p>Upscale dining with comfortable bar area and WiFi.</p>
+                <div class="spot-details">
+                    <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                    <span><i class="fas fa-clock"></i> 5PM-10PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="entertainment" class="spots-section">
+        <h2>Entertainment</h2>
+        <div class="spots-grid">
+            <div class="spot-card" data-categories="entertainment">
+                <div class="spot-img" style="background-image: url('https://source.unsplash.com/random/300x200/?cinema')"></div>
+                <h3>Regal Fox Cinema</h3>
+                <p>Multi-screen cinema with comfortable seating.</p>
+                <div class="spot-details">
+                    <span><i class="fas fa-film"></i> Movies</span>
+                    <span><i class="fas fa-clock"></i> 11AM-11PM</span>
+                </div>
+            </div>
+            <div class="spot-card" data-categories="entertainment outdoor">
+                <div class="spot-img" style="background-image: url('https://source.unsplash.com/random/300x200/?bowling')"></div>
+                <h3>Brambleton Shopping Center</h3>
+                <p>Shopping and entertainment complex with various stores.</p>
+                <div class="spot-details">
+                    <span><i class="fas fa-shopping-bag"></i> Shopping</span>
+                    <span><i class="fas fa-clock"></i> 10AM-9PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Brambleton Hangout Guide</div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#wifi-spots">WiFi Spots</a></li>
+                    <li><a href="#outdoors">Outdoors</a></li>
+                    <li><a href="#food">Food & Drink</a></li>
+                    <li><a href="#entertainment">Entertainment</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Brambleton Hangout Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
